@@ -1,0 +1,95 @@
+/* Obecné styly stránky */
+body {
+    background-color: #f0f4fc; /* Světle modré pozadí */
+    font-family: "Georgia", serif; /* Patkové, racionální a snadno čitelné písmo */
+    color: #333; /* Tmavě šedá barva textu */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Výška stránky přes celé okno */
+}
+
+/* Kontejner kalkulačky */
+#formular {
+    background-color: #ffffff; /* Bílé pozadí */
+    border-radius: 15px; /* Zaoblené rohy */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Jemný stín */
+    width: 350px; /* Menší velikost okna */
+    height: 450px; /* Poměrně kompaktní velikost */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Rovnoměrné rozmístění třetin */
+    padding: 20px;
+    box-sizing: border-box; /* Upravuje výpočet šířky */
+}
+
+/* Nadpisy pro zadání čísla */
+label {
+    font-size: 1rem; /* Velikost textu */
+    color: #5a5a89; /* Tlumená fialová */
+    margin-bottom: 5px;
+    display: block;
+    text-align: left;
+}
+
+/* Vstupní políčka */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #b5c0f0; /* Světle modrá barva rámečku */
+    border-radius: 8px; /* Zaoblené rohy */
+    font-size: 1rem;
+    font-family: "Georgia", serif;
+    color: #333; /* Tmavý text */
+    background-color: #f8f9ff; /* Jemné světlé pozadí */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+input:focus {
+    border-color: #5a5a89; /* Změna barvy rámečku při zaměření */
+    outline: none; /* Odstranění výchozího okraje */
+}
+
+/* Tlačítka */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 8px; /* Zaoblené rohy */
+    background-color: #768ed7; /* Středně modrá barva */
+    color: #fff; /* Bílý text */
+    font-size: 1rem;
+    font-family: "Georgia", serif;
+    cursor: pointer;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* Jemný stín */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5a5a89; /* Tlumená fialová při najetí myší */
+}
+
+button:active {
+    transform: scale(0.98); /* Jemné zatlačení tlačítka při kliknutí */
+}
+
+/* Výsledek */
+#vysledek {
+    padding: 15px;
+    background-color: #f8f9ff; /* Jemné světlé pozadí */
+    border: 2px solid #b5c0f0; /* Světle modrý rámeček */
+    border-radius: 8px; /* Zaoblené rohy */
+    font-size: 1.2rem;
+    font-family: "Georgia", serif;
+    color: #5a5a89; /* Tlumená fialová */
+    text-align: center;
+    min-height: 50px; /* Rezervované místo pro výsledek */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
